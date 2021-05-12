@@ -1,19 +1,8 @@
 const express = require("express");
-// const mongoose = require("mongoose");
 const cors = require("cors");
 const routes = require("./routes");
 
 const app = express();
-
-// mongo db: add mongoose
-// mongoose.connect(`mongodb+srv://`, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   useCreateIndex: true,
-//   useFindAndModify: false,
-// });
-
-//sqlite: add knex sqlite3
 
 app.use(cors());
 const allowCrossDomain = function (req, res, next) {
